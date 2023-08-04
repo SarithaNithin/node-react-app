@@ -36,3 +36,90 @@
     transform: rotate(360deg);
   }
 }
+/* common styles*/
+
+div {
+  
+  /* Font styles */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* home component*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 173px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background-color: rgb(255, 123, 0);  
+}
+
+.grid-item:hover {
+  background-color: #eaeaea; /* Some background color for hover effect */
+}
+
+/* Styles for the .number class (applied to a child element of .grid-item) */
+.nc, .ac {
+  background-color: rgb(0, 255, 123);
+}
+.nc:hover, .ac:hover {
+  background-color: #88a98b; /* Some background color for hover effect */
+}
+
+/*number options*/
+
+.number-options-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.number-options-row {
+  display: flex;
+  justify-content: center;
+}
+
+.number-options-item {
+  width: 173px;
+  height: 55px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background-color:  rgb(0, 255, 123); 
+}
+
+
+.number-digit-row {
+  display: flex;
+  justify-content: center;
+}
+
+.number-didgit-item {
+  width: 173px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background-color: rgb(255, 123, 0);  
+}
